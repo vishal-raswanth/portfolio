@@ -1,10 +1,185 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Vishal S | Portfolio</title>
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vishal S | Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+      </head>
+      <div id="scrollProgress"></div>
+
 <body>
-  <h1>Hello, I'm Vishal S</h1>
-  <p>Welcome to my portfolio website!</p>
+
+  <!-- Sticky Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Vishal S</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        ☰
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <header class="reveal">
+    <h1>Vishal S</h1>
+    <p>Tech Innovator | Founder @ GreenShre</p>
+  </header>
+
+  <section id="about" class="reveal">
+    <h2>About Me</h2>
+    <div class="divider"></div>
+    <p>I am Vishal Raswanth J S, currently pursuing my degree in VLSI Design at Rajalakshmi Institute of Technology. Alongside my academic journey, I’m actively working on building a startup from the ground up an experience that’s been shaping me both technically and entrepreneurially.
+
+       While my academic focus is on VLSI, my interests have expanded into product development, user experience, and how technology can make a meaningful impact on society. I am self-taught in various technical areas and have independently explored fields like web development, AI integration, and user centered product design all of which are being applied in my startup venture.
+        
+        Taking initiative has always been important to me. Whether it's organizing project documentation, managing resources for my prototype, or coordinating with developers, I’ve been hands on with every aspect of execution. I thrive in environments where I can learn fast, build from scratch, and contribute meaningfully to a bigger vision.
+        
+        I'm not just interested in building technology,I’m interested in building something that matters.</p>
+  </section>
+
+  <section id="skills" class="reveal">
+    <h2>Skills</h2>
+    <div class="divider"></div>
+  
+    <div class="skill-category">
+      <h3>Programming & Development</h3>
+      <ul>
+        <li>Python (Data Science & Mchine Learning)</li>
+        <li>HTML, CSS, JavaScript (Frontend Dev)</li>
+        <li>Responsive Web Design</li>
+        <li>Git & GitHub Version Control</li>
+      </ul>
+    </div>
+  
+    <div class="skill-category">
+      <h3>AI & Data Science</h3>
+      <ul>
+        <li>Data Analysis with Pandas & NumPy</li>
+        <li>Data Visualization (Matplotlib, Seaborn)</li>
+        <li>Natural Language Processing (NLP)</li>
+      </ul>
+    </div>
+  
+    <div class="skill-category">
+      <h3>Product & Platform Building</h3>
+      <ul>
+        <li>MVP Development & Prototyping</li>
+        <li>User-Centric Design Thinking</li>
+        <li>Scalable App Architecture for MSMEs</li>
+      </ul>
+    </div>
+  
+    <div class="skill-category">
+      <h3>Tools & Platforms</h3>
+      <ul>
+        <li>Figma (UI/UX Design & Prototyping)</li>
+        <li>VS Code (Development Environment)</li>
+        <li>Google Colab & Jupyter Notebooks</li>
+        <li>Canva / PowerPoint (Presentations)</li>
+      </ul>
+    </div>
+  
+    <div class="skill-category">
+      <h3>Startup & Professional Skills</h3>
+      <ul>
+        <li>Product Pitching & Public Speaking</li>
+        <li>Startup Strategy & Problem-Solution Fit</li>
+        <li>Case Study & Market Research</li>
+        <li>Cross-Functional Team Collaboration</li>
+      </ul>
+    </div>
+  </section>
+  
+  
+  <section id="education" class="reveal">
+    <h2>Education</h2>
+    <div class="divider"></div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>B.E inElectronics Engineering-VLSI design</h3>
+        <p>Rajalakshmi institute of technology, 2024–2028</p>
+        <p>pursuing VLSI designing and developing technical skills to bring up brainstorming ideas</p> 
+        <p>Relevant Coursework: Python for Data Science, Business Analytics,Web/App development</p>
+      </div>
+    </div>
+  </section>
+  <section id="experience" class="reveal">
+    <h2>Experience</h2>
+    <div class="divider"></div>
+  
+    <div class="experience-item">
+      <h3>Founder, GreenShre <span class="date">2024–Present</span></h3>
+      <p>Building an application connecting Ed-Tech and HR-Tech by letting users for upskilling with employment by guiding them through personalized learning and directly matching them to jobs. It also equips employers with smart hiring tools to find verified, skill-ready talent efficiently.</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>PRO-college literature club(Fusion club) <span class="date">2024–Present</span></h3>
+      <p>Conducted and organised various workshop for college students. Interacted with college students promoting literature events</p>
+    </div>
+  </section>
+  
+  
+  <section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <div class="divider"></div>
+  
+    <div class="projects">
+  
+      <div class="card">
+        <h3>GREENSHRE</h3>
+        <p>AI-powered job matching and upskilling app for underserved communities.</p>
+       
+      </div>
+  
+      <div class="card">
+        <h3>MEDIBOLT</h3>
+        <p>A smart healthcare management app designed to minimize doctor–patient meeting time while improving record accessibility and clinical workflows.</p>
+        
+      </div>
+  
+      <div class="card">
+        <h3>FEEDBACK ANALYSIS TOOL</h3>
+        <p>An AI-powered tool to extract and analyze feedback from various sources—text, forms, social media—and return actionable sentiment and statistical summaries.</p>
+    
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <section id="resume" class="reveal">
+    <h2>Resume</h2>
+    <div class="divider"></div>
+    <p>You can view or download my resume below:</p>
+    <a href="assets/vishal_raswanth_resume.pdf" target="_blank" class="resume-btn">View Resume</a>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h2>Contact Me</h2>
+    <div class="divider"></div>
+    <p>You can reach me via:</p>
+    <ul class="contact-list">
+      <li>Email: <a href="mailto:vishalrawanth09@example.com">vishalraswanth09@example.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/vishal-raswanth-s-02792532a" target="_blank">vishal-raswanth-s-02792532a</a></li>
+      <li>GitHub: <a href="https://github.com/vishal-raswanth" target="_blank">github.com/vishal-raswanth</a></li>
+      <li>Instagram: <a href="https://instagram.com/vishal.raswanth" target="_blank">@vishal.raswanth</a></li>
+      <li>Phone: <a href="tel:+919176792444">+91 9176792444</a></li>
+    </ul>
+  </section>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
